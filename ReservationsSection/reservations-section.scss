@@ -1,0 +1,25 @@
+@import '../../../styles/base/base';
+
+.reservations-section {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding-bottom: 72px;
+
+    &__header {
+        display: flex;
+        font-size: $font-size-large;
+        font-weight: $font-weight-heavy;
+        line-height: 32px;
+    }
+
+    &__element-container {
+        display: flex;
+        gap: 48px;
+
+        @media (max-width: 1150px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
